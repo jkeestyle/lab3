@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="@dimen/default_margin"
+    android:padding="@dimen/default_padding"
+    >
+    <TextView android:id="@+id/currentDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+<TextView
+    android:layout_centerHorizontal="true"
+    android:id="@+id/askQuestion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ask_question"
+    android:layout_below="@id/currentDateTime"/>
+    <EditText
+        android:layout_below="@id/askQuestion"
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/answerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/give_me_answer"
+        android:layout_below="@id/question"/>
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerButton"/>
+</RelativeLayout>
